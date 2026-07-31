@@ -39,14 +39,14 @@ const CONFIG = {
   // 3 foto — taruh file fotomu di folder "foto/" lalu ganti nama file di bawah ini.
   // Contoh: foto/foto1.jpg, foto/couple-2.png, dsb. (bukan lagi link URL)
   photos: [
-    { url: "foto/foto1.jpg", caption: "I love you, always" },
-    { url: "foto/foto2.jpg", caption: "My favorite memory" },
-    { url: "foto/foto3.jpg", caption: "Forever & always" }
+    { url: "foto1.jpg", caption: "I love you, always" },
+    { url: "foto2.jpg", caption: "My favorite memory" },
+    { url: "foto3.jpg", caption: "Forever & always" }
   ],
 
   // setiap lagu bisa diisi "url" audio langsung supaya benar-benar bisa diputar
   playlist: [
-    { title: "You!", artist: "Lany", url: "" },
+    { title: "You!", artist: "Lany", url: "https://files.catbox.moe/v288ag.m4a" },
     { title: "Risk It All", artist: "Bruno Mars", url: "" },
     { title: "About You", artist: "The 1975", url: "" },
     { title: "Star", artist: "Colde", url: "" }
