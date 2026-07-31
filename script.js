@@ -47,9 +47,9 @@ const CONFIG = {
   // setiap lagu bisa diisi "url" audio langsung supaya benar-benar bisa diputar
   playlist: [
     { title: "You!", artist: "Lany", url: "https://files.catbox.moe/v288ag.m4a" },
-    { title: "Risk It All", artist: "Bruno Mars", url: "" },
-    { title: "About You", artist: "The 1975", url: "" },
-    { title: "Star", artist: "Colde", url: "" }
+    { title: "Risk It All", artist: "Bruno Mars", url: "https://files.catbox.moe/auquwx.mp3" },
+    { title: "About You", artist: "The 1975", url: "https://files.catbox.moe/kn1k9q.mp3" },
+    { title: "Star", artist: "Colde", url: "https://files.catbox.moe/sooamj.mp4" }
   ]
 };
 /* ============================================================ */
