@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Untukmu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- ============ SF-Symbols-style icon sprite (dipakai lewat <use>) ============ -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5 12 13l8.5-6.5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.7-9.8-9.4C.6 7.4 2.6 4 6.2 4c2 0 3.6 1 5.8 3.2C14.2 5 15.8 4 17.8 4c3.6 0 5.6 3.4 4 7.1C19.5 15.8 12 20.5 12 20.5Z"/></symbol>
+    <symbol id="i-heart-fill" viewBox="0 0 24 24"><path class="icon-fill" d="M12 20.5s-7.5-4.7-9.8-9.4C.6 7.4 2.6 4 6.2 4c2 0 3.6 1 5.8 3.2C14.2 5 15.8 4 17.8 4c3.6 0 5.6 3.4 4 7.1C19.5 15.8 12 20.5 12 20.5Z"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16.5 15.5 11 6 20"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 2 14 10 22 12 14 14 12 22 10 14 2 12 10 10 Z" class="icon-fill"/></symbol>
+    <symbol id="i-flower" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="2.6"/>
+      <circle cx="12" cy="5.5" r="3"/><circle cx="18.5" cy="9.5" r="3"/><circle cx="16" cy="17" r="3"/>
+      <circle cx="8" cy="17" r="3"/><circle cx="5.5" cy="9.5" r="3"/>
+    </symbol>
+    <symbol id="i-petal" viewBox="0 0 24 24"><path class="icon-fill" d="M12 2c4 3 6 7 4 12-1.4 3.4-4 5-4 5s-2.6-1.6-4-5C6 9 8 5 12 2Z"/></symbol>
+    <symbol id="i-cat" viewBox="0 0 24 24">
+      <path class="icon-fill" d="M6 3 8 8h8L18 3l-2.2 3.6h-7.6Z"/>
+      <path class="icon-fill" d="M4.5 9c0-1.8 1.6-3 3.5-3h8c1.9 0 3.5 1.2 3.5 3v6c0 3-2.6 5.5-7.5 5.5S4.5 18 4.5 15Z"/>
+      <circle cx="9.3" cy="12.2" r="1" fill="#210608" stroke="none"/>
+      <circle cx="14.7" cy="12.2" r="1" fill="#210608" stroke="none"/>
+      <path d="M11 14.2c.4.5 1.6.5 2 0" stroke="#210608"/>
+    </symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M15 5 8 12l7 7"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path class="icon-fill" d="M7 4.5v15l13-7.5Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><rect class="icon-fill" x="6" y="4.5" width="4.5" height="15" rx="1.2"/><rect class="icon-fill" x="13.5" y="4.5" width="4.5" height="15" rx="1.2"/></symbol>
+    <symbol id="i-skip-back" viewBox="0 0 24 24"><path class="icon-fill" d="M6 5h2.2v14H6Z"/><path class="icon-fill" d="M19 5.3v13.4L9 12Z"/></symbol>
+    <symbol id="i-skip-fwd" viewBox="0 0 24 24"><path class="icon-fill" d="M18 5h-2.2v14H18Z"/><path class="icon-fill" d="M5 5.3v13.4L15 12Z"/></symbol>
+    <symbol id="i-headphones" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></symbol>
+    <symbol id="i-vol" viewBox="0 0 24 24"><path class="icon-fill" d="M4 9v6h4l5 4V5L8 9Z"/><path d="M16 9a4 4 0 0 1 0 6"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path class="icon-fill" d="M4 9v6h4l5 4V5L8 9Z"/><path d="M16.5 9.5 20.5 14.5"/><path d="M20.5 9.5 16.5 14.5"/></symbol>
+  </defs>
+</svg>
+
+<!-- =================== SPLASH / OPENING (3.5 detik) =================== -->
+<div id="splash">
+  <div class="splash-sparks">
+    <div class="spark" style="left:20%;top:30%;animation-delay:.2s"><svg viewBox="0 0 24 24"><use href="#i-sparkle"/></svg></div>
+    <div class="spark" style="left:75%;top:24%;animation-delay:.8s"><svg viewBox="0 0 24 24"><use href="#i-sparkle"/></svg></div>
+    <div class="spark" style="left:65%;top:68%;animation-delay:1.3s"><svg viewBox="0 0 24 24"><use href="#i-sparkle"/></svg></div>
+    <div class="spark" style="left:15%;top:70%;animation-delay:.5s"><svg viewBox="0 0 24 24"><use href="#i-sparkle"/></svg></div>
+  </div>
+  <div class="splash-ring"></div>
+  <div class="splash-ring d2"></div>
+  <svg class="icon splash-heart"><use href="#i-heart-fill"/></svg>
+  <div class="splash-text">Untukmu</div>
+  <div class="splash-sub">sebuah kejutan sedang disiapkan...</div>
+</div>
+
+<div id="stage">
+
+  <!-- ambient sparkles + hearts -->
+  <div class="particles" id="particles"></div>
+
+  <!-- hidden audio elements: isi URL di CONFIG.audio -->
+  <audio id="bgmAudio" loop preload="none"></audio>
+  <audio id="wrongAudio" preload="none"></audio>
+  <audio id="trackAudio" preload="none"></audio>
+
+  <!-- =================== SCENE 1 : PASSWORD LOCK =================== -->
+  <section class="scene active" id="scene-lock">
+    <div class="corner-orn tl"><svg viewBox="0 0 70 70"><path d="M2 40 L2 2 L45 2"/><circle cx="45" cy="2" r="2.5"/><circle cx="2" cy="40" r="2.5"/></svg></div>
+    <div class="corner-orn br"><svg viewBox="0 0 70 70"><path d="M2 40 L2 2 L45 2"/><circle cx="45" cy="2" r="2.5"/><circle cx="2" cy="40" r="2.5"/></svg></div>
+
+    <div class="lock-badge"><svg class="icon"><use href="#i-lock"/></svg></div>
+    <div class="eyebrow">Untuk Kamu</div>
+    <h2 class="display">Masukkan Password</h2>
+    <div class="pin-boxes" id="pinBoxes">
+      <div class="pin-box"></div><div class="pin-box"></div><div class="pin-box"></div><div class="pin-box"></div>
+    </div>
+    <div class="keypad" id="keypad">
+      <button class="key" data-k="1">1</button><button class="key" data-k="2">2</button><button class="key" data-k="3">3</button>
+      <button class="key" data-k="4">4</button><button class="key" data-k="5">5</button><button class="key" data-k="6">6</button>
+      <button class="key" data-k="7">7</button><button class="key" data-k="8">8</button><button class="key" data-k="9">9</button>
+      <button class="key action" data-k="clear">Hapus</button><button class="key" data-k="0">0</button><button class="key action" data-k="back">⌫</button>
+    </div>
+
+    <div class="clue-toast" id="clueToast">
+      <b><svg class="icon" style="width:15px;height:15px"><use href="#i-heart"/></svg> Password Salah!</b>
+      <span id="clueText">Clue: Tanggal &amp; Bulan Ulang Tahun Kamu.</span>
+    </div>
+  </section>
+
+  <!-- =================== SCENE 2 : UNLOCKED / SURPRISE CARD =================== -->
+  <section class="scene" id="scene-unlocked">
+    <div class="corner-orn tl"><svg viewBox="0 0 70 70"><path d="M2 40 L2 2 L45 2"/><circle cx="45" cy="2" r="2.5"/><circle cx="2" cy="40" r="2.5"/></svg></div>
+    <div class="icon-mark"><svg class="icon"><use href="#i-mail"/></svg></div>
+    <h2 class="display">Yeay, kamu menemukan<br>kunci hatiku ><</h2>
+    <button class="btn" style="margin-top:22px" onclick="goTo('scene-envelope')">Buka Kejutan</button>
+  </section>
+
+  <!-- =================== SCENE 3 : ENVELOPE =================== -->
+  <section class="scene" id="scene-envelope">
+    <div class="eyebrow">Sebuah Surat Untukmu</div>
+    <div class="envelope-wrap" id="envelopeWrap" onclick="openEnvelope()">
+      <div class="envelope-glow"></div>
+      <div class="envelope-body"></div>
+      <div class="letter-peek"></div>
+      <div class="flap"></div>
+      <div class="seal"><svg class="icon" style="width:15px;height:15px"><use href="#i-heart-fill"/></svg></div>
+    </div>
+    <div class="envelope-hint">tap amplopnya untuk membuka</div>
+  </section>
+
+  <!-- =================== SCENE 4 : LETTERS (loop) =================== -->
+  <section class="scene" id="scene-letter">
+    <div class="letter-card">
+      <div class="corner-orn tl"><svg viewBox="0 0 70 70"><path d="M2 40 L2 2 L45 2"/><circle cx="45" cy="2" r="2"/><circle cx="2" cy="40" r="2"/></svg></div>
+      <div class="eyebrow" id="letterEyebrow">Dear,</div>
+      <h2 class="display" id="letterTitle">My Favorite Person</h2>
+      <p class="body" id="letterBody">—</p>
+      <div class="letter-progress" id="letterDots"></div>
+      <div class="progress-badge" id="letterCounter" style="margin:10px auto 0;">1/2</div>
+    </div>
+    <button class="btn" style="margin-top:22px" id="letterNextBtn" onclick="nextLetter()">Lanjut</button>
+  </section>
+
+  <!-- =================== SCENE 5 : HUB =================== -->
+  <section class="scene" id="scene-hub">
+    <div class="corner-orn tl"><svg viewBox="0 0 70 70"><path d="M2 40 L2 2 L45 2"/><circle cx="45" cy="2" r="2.5"/><circle cx="2" cy="40" r="2.5"/></svg></div>
+    <div class="sound-toggle"><button onclick="toggleBgm()" id="soundBtn"><svg class="icon" id="soundIcon"><use href="#i-vol"/></svg></button></div>
+    <div class="eyebrow">Sedikit Bagian Dari Hatiku</div>
+    <h2 class="display">Untuk Kamu, Selalu</h2>
+    <div class="progress-badge" id="hubProgressBadge"><svg class="icon"><use href="#i-heart-fill"/></svg><span>0/3 terbuka</span></div>
+    <div class="hub-cards">
+      <div class="hub-card" data-section="reasons" onclick="goTo('scene-reasons')">
+        <div class="ico"><svg class="icon"><use href="#i-flower"/></svg></div>
+        <div class="txt"><b>Reason Why I Love You</b><span>alasan-alasan kecil yang besar artinya</span></div>
+        <div class="check">✓</div>
+        <div class="chev"><svg class="icon"><use href="#i-chevron-left" style="transform:rotate(180deg)"/></svg></div>
+      </div>
+      <div class="hub-card" data-section="photo" onclick="goTo('scene-photo')">
+        <div class="ico"><svg class="icon"><use href="#i-photo"/></svg></div>
+        <div class="txt"><b>You Are The One I Love</b><span>tiga foto, sejuta rasa</span></div>
+        <div class="check">✓</div>
+        <div class="chev"><svg class="icon"><use href="#i-chevron-left"/></svg></div>
+      </div>
+      <div class="hub-card" data-section="playlist" onclick="goTo('scene-playlist')">
+        <div class="ico"><svg class="icon"><use href="#i-music"/></svg></div>
+        <div class="txt"><b>Playlist For You</b><span>lagu-lagu yang mengingatkanku padamu</span></div>
+        <div class="check">✓</div>
+        <div class="chev"><svg class="icon"><use href="#i-chevron-left"/></svg></div>
+      </div>
+    </div>
+    <div class="finale-cta" id="hubFinaleCta">
+      <button class="btn" onclick="goTo('scene-ending')"><svg class="icon" style="width:14px;height:14px"><use href="#i-heart-fill"/></svg> Lanjut ke Penutup</button>
+    </div>
+  </section>
+
+  <!-- =================== SCENE 9 : ENDING (PENUTUP) =================== -->
+  <section class="scene" id="scene-ending">
+    <div class="ending-confetti" id="endingConfetti"></div>
+    <div class="corner-orn tl"><svg viewBox="0 0 70 70"><path d="M2 40 L2 2 L45 2"/><circle cx="45" cy="2" r="2.5"/><circle cx="2" cy="40" r="2.5"/></svg></div>
+    <div class="corner-orn br"><svg viewBox="0 0 70 70"><path d="M2 40 L2 2 L45 2"/><circle cx="45" cy="2" r="2.5"/><circle cx="2" cy="40" r="2.5"/></svg></div>
+    <div class="eyebrow">Penutup</div>
+    <div class="ending-heart-wrap">
+      <svg class="icon ending-heart"><use href="#i-heart-fill"/></svg>
+    </div>
+    <h1 class="script">Terima kasih<br>sudah membuka hatiku</h1>
+    <p class="body">Sesederhana apapun ini, semua dibuat dengan sepenuh hati untukmu. Semoga setiap kata dan kejutan kecil ini bisa membuatmu tersenyum, hari ini dan seterusnya.</p>
+    <div class="ending-signature">Selalu, untukmu.</div>
+    <button class="btn btn-ghost replay-btn" onclick="replayJourney()">Buka Lagi dari Awal</button>
+  </section>
+
+  <!-- =================== SCENE 6 : REASONS =================== -->
+  <section class="scene" id="scene-reasons">
+    <div class="petals" id="petals"></div>
+    <div class="back-btn"><button class="btn btn-ghost" onclick="goTo('scene-hub')"><svg class="icon"><use href="#i-chevron-left"/></svg> Back</button></div>
+    <div class="eyebrow"><svg class="icon" style="width:12px;height:12px"><use href="#i-sparkle"/></svg> <svg class="icon" style="width:12px;height:12px"><use href="#i-sparkle"/></svg></div>
+    <h1 class="script">Reason why<br>I Love You</h1>
+    <div class="bouquet-wrap">
+      <svg class="icon bouquet"><use href="#i-flower"/></svg>
+      <svg class="icon cute-cat"><use href="#i-cat"/></svg>
+    </div>
+    <div class="reason-grid" id="reasonGrid"></div>
+  </section>
+
+  <!-- =================== SCENE 7 : PHOTO (book slider, 3 halaman) =================== -->
+  <section class="scene" id="scene-photo">
+    <div class="back-btn"><button class="btn btn-ghost" onclick="goTo('scene-hub')"><svg class="icon"><use href="#i-chevron-left"/></svg> Back</button></div>
+    <div class="eyebrow"><svg class="icon" style="width:12px;height:12px"><use href="#i-heart-fill"/></svg></div>
+    <h1 class="script">You are the one<br>I Love</h1>
+    <div class="book-wrap">
+      <div class="book" id="photoBook"></div>
+      <div class="book-nav">
+        <button onclick="photoPrev()"><svg class="icon"><use href="#i-chevron-left"/></svg></button>
+        <div class="book-dots" id="photoDots"></div>
+        <button onclick="photoNext()"><svg class="icon"><use href="#i-chevron-right"/></svg></button>
+      </div>
+    </div>
+    <div class="caption-particle-wrap">
+      <div class="caption-particles" id="captionParticles"></div>
+      <p class="body" id="photoCaptionText">—</p>
+    </div>
+  </section>
+
+  <!-- =================== SCENE 8 : PLAYLIST =================== -->
+  <section class="scene" id="scene-playlist">
+    <div class="back-btn"><button class="btn btn-ghost" onclick="goTo('scene-hub')"><svg class="icon"><use href="#i-chevron-left"/></svg> Back</button></div>
+    <div class="eyebrow"><svg class="icon" style="width:14px;height:14px"><use href="#i-headphones"/></svg></div>
+    <h2 class="display">Playlist For You</h2>
+    <div class="player">
+      <div class="now-playing">
+        <div class="vinyl" id="vinyl"></div>
+        <div class="np-info">
+          <b id="npTitle">—</b>
+          <span id="npArtist">—</span>
+        </div>
+        <div class="eq" id="eq"><i></i><i></i><i></i></div>
+      </div>
+      <div class="progress"><i id="progressBar"></i></div>
+      <div class="controls">
+        <button onclick="prevTrack()"><svg class="icon"><use href="#i-skip-back"/></svg></button>
+        <button class="play-btn" id="playBtn" onclick="togglePlay()"><svg class="icon" id="playIcon"><use href="#i-play"/></svg></button>
+        <button onclick="nextTrack()"><svg class="icon"><use href="#i-skip-fwd"/></svg></button>
+      </div>
+      <div class="playlist-list" id="playlistList"></div>
+    </div>
+  </section>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
